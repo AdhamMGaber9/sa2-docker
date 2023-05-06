@@ -1,5 +1,5 @@
 import { PrismaClient } from "@prisma/client";
-import { offer as Offer, methods } from "../models/offer.js";
+import { offers as Offer, methods } from "../models/offer.js";
 const prisma = new PrismaClient();
 const addOffer = async (offer) => {
   offer = new Offer(offer);
@@ -14,7 +14,7 @@ const getOffer = async (id) => {
   return await prisma.offer.findFirst({ where: { id: +id } });
 };
 const getOffers = async (id) => {
-  return await prisma.offer.findMirst({});
+  return await prisma.offer.findFirst({});
 };
 const updateOffer = async (offer, id) => {
   offer = new Offer(offer);

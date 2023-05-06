@@ -1,5 +1,5 @@
 import * as fs from "fs";
-export class offer {
+export class offers {
   id;
   method;
   item;
