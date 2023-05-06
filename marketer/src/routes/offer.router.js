@@ -1,6 +1,6 @@
 import {Router} from "express";
 import {methods} from "../models/offer.js";
-import offeController from "../controllers/offer.controllers.js";
+import offeController from "../controllers/offer_controllers.js";
 
 const router = Router();
 

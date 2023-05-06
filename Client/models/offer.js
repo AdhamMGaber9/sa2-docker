@@ -1,4 +1,4 @@
-import * as fs from "fa";
+import * as fs from "fs";
 export class offer {
   id;
   method;
